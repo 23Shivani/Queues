@@ -17,4 +17,10 @@ public class MyQueues {
 			tail = newNode;
 		}
 	}
+	
+	public int deQueue () {
+		MyQueueNode tempNode = head;
+		head =head.getNext();
+		return tempNode.getData();
+	}
 }
